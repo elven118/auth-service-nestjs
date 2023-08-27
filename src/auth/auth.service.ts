@@ -14,7 +14,6 @@ export class AuthService {
     });
   }
 
-
   async createUser(data: Prisma.UsersCreateInput): Promise<Users> {
     return this.prisma.users.create({
       data,
