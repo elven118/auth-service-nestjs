@@ -9,7 +9,7 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
   app.useGlobalFilters(new PrismaExceptionFilter());
   const config = new DocumentBuilder()
-    .setTitle('ESG')
+    .setTitle('Auth Service')
     .setVersion('0.0.1')
     .build();
   const document = SwaggerModule.createDocument(app, config);
